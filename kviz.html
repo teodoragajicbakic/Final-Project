@@ -4,49 +4,44 @@
 	<title>"A" Kwiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <link rel="stylesheet" href="reset.css">
-   	 <!-- <link href="style.css" rel="stylesheet" type "text/css"> -->
+   	 <link href="style.css" rel="stylesheet" type "text/css">
    	</head>
    	<body>
-   		<header class="" id="moj-header">
-   			<div class="row">
-   			<ul class="main-nav">
-   			   <li class="">About</a> </li>
-               <li><a href="active"><a href=""kviz.html">Kviz</a> </li>
-            </ul>   
-        </div>
-   		</header>
+			<header class="" id="moj-header">
+				<div class="row">
+					<ul class="main-nav">
+						 <li><a href="index.html">About</a> </li>
+						 <li class="active"><a href="">Quiz</a> </li>
+					</ul>
+				</div>
+			</header>
 	<script src ="kviz.js"></script>
 </head>
 <body>
-	<form name ="myform">
+	<div class="main-content kviz">
+		<div class="questions-area">
+			<form name ="myform">
+				<div class="question">
+					<p>Q1.There are 7 continets on our planet. So, how many continents are on our planet?</p>
+					<div class="answer"><input type="radio" name="q1" value="a">7</div>
+					<div class="answer"><input type="radio" name="q1" value="b">10</div>
+					<div><input class="button" type="button" value="submit" onclick="check(1)"></div>
+				</div>
+				<div class="question">
+			    <p>Q2.There are 8 planets in our Solar System. So, how many planets are in our Solar System?</p>
+					<div class="answer"><input type="radio" name="q2" value="a">12</div>
+					<div class="answer"><input type="radio" name="q2" value="b">8</div>
+					<div><input class="button" type="button" value="submit" onclick="check(2)"></div>
+				</div>
+				<div class="question">
+					<p>Q3.Vesuvius is a volcano. So, Vesuvius is?</p>
+					<div class="answer"><input type="radio" name="q3" value="a">volcano</div>
+					<div class="answer"><input type="radio" name="q3" value="b">ocean</div>
+					<div><input class="button" type="button" value="submit" onclick="check(3)"></div>
+				</div>
+			</form>
+		</div>
+	</div>
 
-		Q1.There are 7 continets on our planet. So, how many continents are on our planet?<br>
-		<input type="radio" name="q1" value="a">7<br/> 
-		<input type="radio" name="q1" value="b">10<br/>
-
-
-<input type="button" value="submit" onclick="check(1)"><br/>
-
-
-<h1></h1>
-
-        Q2.There are 8 planets in our Solar System. So, how many planets are in our Solar System?<br>
-		<input type="radio" name="q2" value="a">12<br/> 
-		<input type="radio" name="q2" value="b">8<br/>
-
-
-<input type="button" value="submit" onclick="check(2)"><br/>
-
-<h1></h1>
-
-		Q3.Vesuvius is a volcano. So, Vesuvius is?<br>
-		<input type="radio" name="q3" value="a">volcano<br/> 
-		<input type="radio" name="q3" value="b">ocean<br/>
-		
-
-<input type="button" value="submit" onclick="check(3)"><br/>
-
-
-	</form>
 </body>
 </html>
