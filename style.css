@@ -6,11 +6,6 @@
 body
 {
 	font-family: monospace;
-	background-image: url('nautism.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; 
-	background-size:cover;
 }
 
 header
@@ -57,7 +52,7 @@ img {
 .main-nav li a:hover
 {
 	background: #fff;
-	color: #0a132f;	
+	color: #0a132f;
 	/*border: 1px solid white;*/
 }
 
@@ -67,34 +62,67 @@ img {
 	margin: auto;*/
 }
 
-.hero
-{
-	position: absolute;
-	/*width: 1200px;*/
-	margin-left: 0;
-	margin-top: 41vh;
-	width: 100%;
-}
 
-h1
-{ 
-	color: white;
-	font-family: cursive;
-	font-size: 50px;
-	text-align: center;
-	/*margin-top: 590px;*/
-}
 
-.main-content.about
-{
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/nautism.jpg);
-	height: 100vh;
+.main-content {
+	background-image: url(nautism.jpg);
+	/*height: calc(100vh - 50px);*/
 	background-size: cover;
 	background-position: center;
+	position: relative;
+	overflow: auto;
+}
 
+
+.hero {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+h1.front-title {
+	color: white;
+	font-family: cursive;
+	font-size: 100px;
+	text-align: center;
+	line-height: 100vh;
+	text-shadow: 2px 2px 3px #000;
 }
 
 .image {
 
 	margin-bottom: 10px;
+}
+.questions-area {
+  width: 80%;
+  max-width: 1200px;
+  margin: 30px auto;
+  font-size: 20px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0);
+	color: #fff;
+}
+.question {
+	padding: 16px;
+}
+.question p {
+	margin-bottom: 12px;
+}
+.answer {
+	margin: 20px 5px;
+	display: inline-block;
+}
+input.button {
+	font-size: 16px;
+	padding: 5px 10px;
+	background: #ce9640;
+	border: 1px solid #cd9640;
+	cursor: pointer;
+	
+}
+input.button:hover {
+	background: transparent;
 }
