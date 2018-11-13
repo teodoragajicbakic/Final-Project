@@ -6,19 +6,13 @@
 body
 {
 	font-family: monospace;
+	background-image: url('nautism.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size:cover;
 }
 
-header
-{
-	background: #0a132f;
-
-}
-ul {
-	margin: 0;
-}
-img {
-	max-width: 500%;
-}
 
 .main-nav
 {
