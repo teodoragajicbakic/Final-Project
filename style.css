@@ -60,7 +60,6 @@ body
 
 .main-content {
 	background-image: url(nautism.jpg);
-	/*height: calc(100vh - 50px);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
